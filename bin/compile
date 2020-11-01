@@ -4,8 +4,10 @@ RUN_COMMAND=redis-server
 BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
-
-mkdir -p $CACHE_DIR
+BUILDPACK_DIR="$(dirname $(dirname $0))"
+set -e            # fail fast
+set -o pipefail 
+mkdir -p $BUILD_DIR/bin
 
 wget https://download.redis.io/releases/redis-6.0.9.tar.gz
 tar xzf redis-6.0.9.tar.gz
