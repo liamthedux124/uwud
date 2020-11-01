@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
-mkdir -p redis
+
+RUN_COMMAND=redis-server
+
 wget https://download.redis.io/releases/redis-6.0.9.tar.gz
 tar xzf redis-6.0.9.tar.gz
 cd redis-6.0.9
 make
-chmod a+x redis-server
+chmod a+x ${RUN_COMMAND}
