@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-RUN_COMMAND=redis-cli
+RUN_COMMAND=redis-server
 BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
@@ -10,5 +10,5 @@ mkdir -p $CACHE_DIR
 wget https://download.redis.io/releases/redis-6.0.9.tar.gz
 tar xzf redis-6.0.9.tar.gz
 cd redis-6.0.9
-make install
+make
 chmod a+x ${RUN_COMMAND}
