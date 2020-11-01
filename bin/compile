@@ -14,3 +14,7 @@ tar xzf redis-6.0.9.tar.gz
 cd redis-6.0.9
 make
 cp -r "$BUILDPACK_DIR/redis-6.0.9" $BUILD_DIR/bin/
+
+cd ~/bin/redis-6.0.9/src
+
+chmod a+x redis-server
