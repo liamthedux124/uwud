@@ -27,4 +27,6 @@ ${BUILD_DIR}/bin/redis-6.0.9/src/redis-server &
 exec ${BUILD_DIR}/bin/redis-6.0.9/src/redis-server
 #chmod 777 ./redis-server
 EOF
+
+
 chmod a+x ${BUILD_DIR}/bin/redis-6.0.9/src/${RUN_COMMAND}
