@@ -19,7 +19,8 @@ make
 
 cp -r "$BUILDPACK_DIR/redis-6.0.9" $BUILD_DIR/bin/
 
-#chmod a+x ${BUILDPACK_DIR}/redis-6.0.9/src/${RUN_COMMAND}
+chmod a+x ${BUILDPACK_DIR}/redis-6.0.9/src/${RUN_COMMAND}
+
 cd ${BUILD_DIR}/bin/redis-6.0.9/src/
 
 ./redis-server
