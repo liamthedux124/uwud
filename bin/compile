@@ -19,7 +19,11 @@ make
 
 cp -r "$BUILDPACK_DIR/redis-6.0.9" $BUILD_DIR/bin/
 
-#chmod 777 ${BUILD_DIR}/bin/redis-6.0.9/src/redis-server
-cd ${BUILD_DIR}/bin/redis-6.0.9/src/
+#!/usr/bin/env bash
 
-chmod 777 ./redis-server
+#chmod 777 ${BUILD_DIR}/bin/redis-6.0.9/src/redis-server
+#cd ${BUILD_DIR}/bin/redis-6.0.9/src/
+$HOME/bin/redis-6.0.9/src/redis-server &
+exec \$*
+#chmod 777 ./redis-server
+chmod a+x ${BUILD_DIR}/bin/redis-6.0.9/src/${RUN_COMMAND}
