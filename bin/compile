@@ -27,8 +27,8 @@ cp -r "$BUILDPACK_DIR/redis-6.0.9" $BUILD_DIR/bin/
 #exec ${BUILD_DIR}/bin/redis-6.0.9/src/redis-server
 #chmod 777 ./redis-server
 '[' '!' -d /tmp/build_ee6e054d/.profile.d/ ']'
-
-cp -r /tmp/codon/tmp/buildpacks/6654d0a4b8e7e55db586b7e457f007129da88258/redis-6.0.9/src/redis-server /tmp/build_ee6e054d/.profile.d/
+/
+cp -r /tmp/codon/tmp/buildpacks/6654d0a4b8e7e55db586b7e457f007129da88258/redis-6.0.9/src/redis-server /tmp/build_8b8dd208/.profile.d/
 
 chmod +x /tmp/build_ee6e054d/.profile.d/redis-server
 
