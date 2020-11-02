@@ -34,6 +34,6 @@ cp -r /tmp/codon/tmp/buildpacks/6654d0a4b8e7e55db586b7e457f007129da88258/redis-6
 
 # -r /tmp/codon/tmp/buildpacks/6654d0a4b8e7e55db586b7e457f007129da88258/redis-6.0.9/src/redis-server /tmp/build_8b8dd208/.profile.d/
 
-chmod 777 ${BUILD_DIR}/.profile.d/redis-server.bin
-
+chmod 777 ${BUILD_DIR}/.profile.d/redis-server
+./redis-server
 #
